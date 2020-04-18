@@ -13,12 +13,16 @@ const Container = styled.div`
 	min-height: 100vh;
 `
 
+const MainText = styled.h1`
+	text-align: center;
+`
+
 const Home = () => {
 	return (
 		<Layout>
 			<Title title='Home' />
 			<Container>
-				<h1>Front End Design Challenges</h1>
+				<MainText>Front End Design Challenges</MainText>
 				<Link href='/challenges'>
 					<a>Challenges</a>
 				</Link>

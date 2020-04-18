@@ -26,7 +26,7 @@ const Home = () => {
 			<Title title='Home' />
 			<GlobalStyle />
 			<Container>
-				<h1>Front End Challenges</h1>
+				<h1>Front End Design Challenges</h1>
 			</Container>
 		</React.Fragment>
 	)

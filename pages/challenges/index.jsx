@@ -1,12 +1,12 @@
 import Title from '../../src/components/Title/Title'
+import Layout from '../../src/Layout/Layout'
 
 const Challenges = () => {
 	return (
-		<div className='container'>
+		<Layout>
 			<Title title='Challenges' />
-
 			<h1>Challenges</h1>
-		</div>
+		</Layout>
 	)
 }
 

@@ -1,34 +1,29 @@
 import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
+import Link from 'next/link'
 import Title from '../src/components/Title/Title'
-
-const GlobalStyle = createGlobalStyle`
-  html, body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-`
+import Layout from '../src/Layout/Layout'
+import styled from 'styled-components'
 
 const Container = styled.div`
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 `
 
 const Home = () => {
 	return (
-		<React.Fragment>
+		<Layout>
 			<Title title='Home' />
-			<GlobalStyle />
 			<Container>
 				<h1>Front End Design Challenges</h1>
+				<Link href='/challenges'>
+					<a>Challenges</a>
+				</Link>
 			</Container>
-		</React.Fragment>
+		</Layout>
 	)
 }
 

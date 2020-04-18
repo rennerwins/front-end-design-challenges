@@ -25,7 +25,9 @@ const Home = () => {
 		<React.Fragment>
 			<Title title='Home' />
 			<GlobalStyle />
-			<Container></Container>
+			<Container>
+				<h1>Front End Challenges</h1>
+			</Container>
 		</React.Fragment>
 	)
 }
